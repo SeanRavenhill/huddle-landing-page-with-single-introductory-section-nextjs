@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primaryViolet: hsl(257, 40%, 49%);
+  --primarySoftMagenta: hsl(300, 69%, 71%);
+  --textWhite: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primaryViolet: hsl(257, 40%, 49%);
+    --primarySoftMagenta: hsl(300, 69%, 71%);
+    --textWhite: #ffffff;
+  }
+}
+
+body {
+  color: var(--textWhite);
+  background: var(--primaryViolet);
+  font-family: Arial, Helvetica, sans-serif;
+}

@@ -23,6 +23,11 @@
 # misc
 .DS_Store
 *.pem
+style-guide.md
+README-template.md
+
+# Delete at project completion
+nextjs_boilerplate.tsx
 
 # debug
 npm-debug.log*
