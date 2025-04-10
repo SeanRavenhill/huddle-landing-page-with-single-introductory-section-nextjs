@@ -1,0 +1,11 @@
+import HuddleLogo from '../ui/logo/huddle-logo';
+
+export default function Header() {
+  return (
+    <>
+      <header className='absolute top-0 left-0 right-0 z-50 flex items-center max-w-[96rem] mx-auto ~h-[6.25rem]/[10rem] ~px-[2.5rem]/[5rem]'>
+        <HuddleLogo />
+      </header>
+    </>
+  );
+}

@@ -28,6 +28,7 @@ README-template.md
 
 # Delete at project completion
 nextjs_boilerplate.tsx
+scratchpage.tsx
 
 # debug
 npm-debug.log*
