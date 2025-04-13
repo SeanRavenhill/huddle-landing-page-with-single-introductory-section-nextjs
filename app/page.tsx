@@ -5,6 +5,8 @@ import PrimaryButton from './ui/primary-button';
 import Background from './ui/background/background';
 import HeroImage from './components/hero-image';
 import { FacebookIcon, TwitterIcon, InstagramIcon } from './ui/icons/icons';
+import SetModalContentButton from './components/set-modal-context-button';
+
 
 import { poppins } from './ui/fonts';
 
@@ -13,6 +15,7 @@ export default function Home() {
     <>
       <Header />
       <main>
+        
         {/* Hero Section */}
         <section className='min-h-screen w-full'>
           {/* SVG Background sits behind Hero content. Concession for Mobile and then Desktop layouts applied*/}
@@ -65,7 +68,10 @@ export default function Home() {
 
         </section>
       </main>
+      
       <Footer />
+      <SetModalContentButton />
+      
     </>
   );
 }
