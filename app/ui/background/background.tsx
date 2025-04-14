@@ -6,8 +6,8 @@ export default function Background() {
   return (
     <>
       {/* Mobile viewports */}
-      <div className='xl:hidden block absolute inset-0 z-0 overflow-hidden'>
-        <BgMobile className={'w-full h-auto'} />
+      <div className='xl:hidden block absolute inset-0 z-0'>
+        <BgMobile className={'w-full min-h-[50%] h-auto'} />
       </div>
 
       {/* Desktop viewports */}

@@ -6,6 +6,7 @@ import Background from './ui/background/background';
 import HeroImage from './components/hero-image';
 import { FacebookIcon, TwitterIcon, InstagramIcon } from './ui/icons/icons';
 
+
 import { poppins } from './ui/fonts';
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
     <>
       <Header />
       <main>
+        
         {/* Hero Section */}
         <section className='min-h-screen w-full'>
           {/* SVG Background sits behind Hero content. Concession for Mobile and then Desktop layouts applied*/}
@@ -65,7 +67,8 @@ export default function Home() {
 
         </section>
       </main>
-      <Footer />
+      
+      {/* <Footer /> */}
     </>
   );
 }
