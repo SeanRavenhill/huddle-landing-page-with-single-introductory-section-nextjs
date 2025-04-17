@@ -9,6 +9,7 @@ export default function HuddleLogo() {
           src='/images/huddle-logo.svg'
           width={120}
           height={19}
+          priority={true}
           alt='Huddle'
           className='block sm:hidden'
         />
@@ -16,6 +17,7 @@ export default function HuddleLogo() {
           src='/images/huddle-logo.svg'
           width={200}
           height={32}
+          priority={true}
           alt='Huddle'
           className='hidden sm:block'
         />

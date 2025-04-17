@@ -67,7 +67,7 @@ export default function Home() {
       </main>
       
       {/* Render the button that toggles the modal's visibility */}
-      <ModalToggleButton onClick={handleInfoModal} />
+      <ModalToggleButton onClick={handleInfoModal} isModalOpen={isModalOpen}/>
       {/* 
           Conditionally render the InfoModal by passing a className.
           If "isModalOpen" is true, the class 'block' displays the modal,

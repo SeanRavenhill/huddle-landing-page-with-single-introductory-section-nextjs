@@ -1,0 +1,17 @@
+.modal-toggle-spin {
+  animation-duration: 0.5s;
+  animation-name: modal-toggle;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+}
+
+@keyframes modal-toggle {
+  from {
+    transform: rotate(0deg);
+    transform: scale(0%);
+  }
+  to {
+    transform: rotate(360deg);
+    transform: scale(100%);
+  }
+}
