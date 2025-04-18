@@ -7,10 +7,11 @@ interface ModalToggleButtonProps {
 }
 
 export default function ModalToggleButton({ onClick, isModalOpen }: ModalToggleButtonProps) {
-  const modalToggle = document.querySelector('.modal-toggle')
 
   // If lock is true, disable vertical scrolling by adding the class, otherwise enable scrolling.
   useEffect(() => {
+    const modalToggle = document.querySelector('.modal-toggle')
+
     if (modalToggle) {
       isModalOpen
         ? modalToggle.classList.add('modal-toggle-spin')// Disable vertical scrolling.
@@ -32,6 +33,10 @@ export default function ModalToggleButton({ onClick, isModalOpen }: ModalToggleB
             <div className='absolute top-[calc(50%-(calc(10%/2)))] w-full h-[10%] bg-white rotate-45'></div>
             <div className='absolute top-[calc(50%-(calc(10%/2)))] w-full h-[10%] bg-white -rotate-45'></div>
           </div>
+          {/* <div className='modal-toggle relative w-[75%] h-[75%]'>
+            <div className='absolute top-[calc(50%-(calc(10%/2)))] w-full h-[10%] bg-white rotate-45'></div>
+            <div className='absolute top-[calc(50%-(calc(10%/2)))] w-full h-[10%] bg-white -rotate-45'></div>
+          </div> */}
         </div>
       </button>
     </div>
