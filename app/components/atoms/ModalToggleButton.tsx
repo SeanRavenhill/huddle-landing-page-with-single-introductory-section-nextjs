@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import '../../styles/modalToggleAnimations.css'
+import '@/styles/modalToggleAnimations.css'
 
 interface ModalToggleButtonProps {
   onClick: (event: React.MouseEvent<HTMLButtonElement>) => void;

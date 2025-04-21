@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import InstagramLogo from '../../../assets/svgs/instagram-logo.svg';
+import InstagramLogo from '@/assets/svgs/instagram-logo.svg';
 
 export default function InstagramIcon() {
   return (

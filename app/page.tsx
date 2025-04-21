@@ -4,19 +4,19 @@
 import { useState } from 'react';
 
 // Import custom hook to lock/unlock body scroll based on modal visibility
-import useLockBodyScroll from './hooks/useLockBodyScroll';
+import useLockBodyScroll from '@/hooks/useLockBodyScroll';
 
 // Import atom components
-import Background from './components/atoms/Background';
-import HeroImage from './components/atoms/HeroImage';
-import ModalToggleButton from './components/atoms/ModalToggleButton';
+import Background from '@/components/atoms/Background';
+import HeroImage from '@/components/atoms/HeroImage';
+import ModalToggleButton from '@/components/atoms/ModalToggleButton';
 
 // Import molecule components
-import Header from './components/molecules/Header';
+import Header from '@/components/molecules/Header';
 
 // Import organism components
-import HeroSection from './components/organisms/HeroSection';
-import InfoModal from './components/organisms/InfoModal';
+import HeroSection from '@/components/organisms/HeroSection';
+import InfoModal from '@/components/organisms/InfoModal';
 
 export default function Home() {
   // State hook to manage modal visibility.

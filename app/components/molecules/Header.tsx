@@ -1,4 +1,4 @@
-import HuddleLogo from '@/app/components/atoms/HuddleLogo';
+import HuddleLogo from '@/components/atoms/HuddleLogo';
 
 export default function Header() {
   return (

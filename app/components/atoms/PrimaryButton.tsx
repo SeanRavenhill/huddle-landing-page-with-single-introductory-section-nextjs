@@ -5,7 +5,7 @@ interface PrimaryButtonProps
   children: React.ReactNode;
 }
 
-import { poppins } from '@/app/styles/fonts';
+import { poppins } from '@/styles/fonts';
 
 export default function PrimaryButton({
   children,

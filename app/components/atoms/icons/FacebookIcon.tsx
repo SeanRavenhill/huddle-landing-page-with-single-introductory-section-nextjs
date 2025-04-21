@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import FacebookLogo from '../../../assets/svgs/facebook-logo.svg'
+import FacebookLogo from '@/assets/svgs/facebook-logo.svg'
 
 export default function FacebookIcon() {
   return (

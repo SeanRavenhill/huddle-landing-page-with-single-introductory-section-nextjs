@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import TwitterLogo from '../../../assets/svgs/twitter-logo.svg';
+import TwitterLogo from '@/assets/svgs/twitter-logo.svg';
 
 export default function TwitterIcon() {
   return (

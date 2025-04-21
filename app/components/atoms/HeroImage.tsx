@@ -1,6 +1,6 @@
 // SVG Imports using svgr
-import DesktopIllustration from '../../assets/svgs/desktop-illustration.svg';
-import MobileIllustration from '../../assets/svgs/mobile-illustration.svg';
+import DesktopIllustration from '@/assets/svgs/desktop-illustration.svg';
+import MobileIllustration from '@/assets/svgs/mobile-illustration.svg';
 
 export default function HeroImage() {
   return (

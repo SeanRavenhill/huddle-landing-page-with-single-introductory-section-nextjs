@@ -1,10 +1,10 @@
 
 // Import atom components
-import PrimaryButton from '../../components/atoms/PrimaryButton';
-import { FacebookIcon, TwitterIcon, InstagramIcon } from '../../components/atoms/icons';
+import PrimaryButton from '@/components/atoms/PrimaryButton';
+import { FacebookIcon, TwitterIcon, InstagramIcon } from '@/components/atoms/icons/index';
 
 // Import custom font styling
-import { poppins } from '../../styles/fonts';
+import { poppins } from '@/styles/fonts';
 
 export default function HeroSection() {
   return (

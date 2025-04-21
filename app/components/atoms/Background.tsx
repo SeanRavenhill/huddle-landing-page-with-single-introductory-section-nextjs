@@ -1,6 +1,6 @@
 // SVG Imports using svgr
-import BgDesktop from '../../assets/svgs/bg-desktop.svg';
-import BgMobile from '../../assets/svgs/bg-mobile.svg';
+import BgDesktop from '@/assets/svgs/bg-desktop.svg';
+import BgMobile from '@/assets/svgs/bg-mobile.svg';
 
 export default function Background() {
   return (

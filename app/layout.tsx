@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
-import { openSans } from './styles/fonts';
-import './styles/globals.css';
+import { openSans } from '@/styles/fonts';
+import '@/styles/globals.css';
 
 export const metadata: Metadata = {
     title: 'Frontend Mentor - Huddle Landing Page',
