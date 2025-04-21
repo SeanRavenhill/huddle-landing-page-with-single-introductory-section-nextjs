@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import '../../styles/animations.css'
+import '../../styles/modalToggleAnimations.css'
 
 interface ModalToggleButtonProps {
   onClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
@@ -7,36 +7,31 @@ interface ModalToggleButtonProps {
 }
 
 export default function ModalToggleButton({ onClick, isModalOpen }: ModalToggleButtonProps) {
-
-  // If lock is true, disable vertical scrolling by adding the class, otherwise enable scrolling.
   useEffect(() => {
-    const modalToggle = document.querySelector('.modal-toggle')
+    const modalToggle = document.querySelector('.modal-toggle-btn')
 
     if (modalToggle) {
       isModalOpen
-        ? modalToggle.classList.add('modal-toggle-spin')// Disable vertical scrolling.
-        : modalToggle.classList.remove('modal-toggle-spin'); // Enable vertical scrolling.
-    
-        // Cleanup function: remove the class to ensure the body scroll is enabled when the component unmounts.
+        ? modalToggle.classList.add('open')
+        : modalToggle.classList.remove('open');
+
       return () => {
-        modalToggle.classList.remove('modal-toggle-spin');
+        modalToggle.classList.remove('open');
       }
     }
     
-  }, [isModalOpen]) // Re-run the effect whenever the lock flag changes.
+  }, [isModalOpen])
 
   return (
     <div className='absolute top-0 right-0 z-[999] pt-6 pr-6'>
-      <button onClick={onClick}>
-        <div className='~w-7/10 ~h-7/10 rounded-full border flex flex-col justify-center items-center transition hover:border-softMagenta hover:text-softMagenta'>
-          <div className='modal-toggle relative w-[75%] h-[75%]'>
-            <div className='absolute top-[calc(50%-(calc(10%/2)))] w-full h-[10%] bg-white rotate-45'></div>
-            <div className='absolute top-[calc(50%-(calc(10%/2)))] w-full h-[10%] bg-white -rotate-45'></div>
+      <button onClick={onClick} className='group'>
+        <div className='~w-7/10 ~h-7/10 rounded-full border flex flex-col justify-center items-center transition group-hover:border-softMagenta group-hover:text-softMagenta'>
+          <div className='modal-toggle-btn relative w-full h-full rounded-full'>
+            <div className='top-line absolute top-[15%] left-[calc(50%-calc(0.1875rem/2))] w-[0.1875rem] h-[0.1875rem] transition bg-white group-hover:bg-softMagenta rounded-full'></div>
+            <div className='bottom-line absolute bottom-[15%] left-[calc(50%-calc(0.1875rem/2))] w-[0.1875rem] h-[50%] transition bg-white group-hover:bg-softMagenta rounded-full'></div>
+            <div className='close-line1 absolute top-[calc(50%-calc(0.1875rem/2))] left-[calc(50%-40%)] scale-x-0 w-[80%] h-[0.1875rem] transition bg-white group-hover:bg-softMagenta rounded-full'></div>
+            <div className='close-line2 absolute top-[calc(50%-calc(0.1875rem/2))] left-[calc(50%-40%)] scale-x-0 w-[80%] h-[0.1875rem] transition bg-white group-hover:bg-softMagenta rounded-full'></div>
           </div>
-          {/* <div className='modal-toggle relative w-[75%] h-[75%]'>
-            <div className='absolute top-[calc(50%-(calc(10%/2)))] w-full h-[10%] bg-white rotate-45'></div>
-            <div className='absolute top-[calc(50%-(calc(10%/2)))] w-full h-[10%] bg-white -rotate-45'></div>
-          </div> */}
         </div>
       </button>
     </div>
