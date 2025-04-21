@@ -65,6 +65,8 @@ export default function Home() {
 
         </section>
       </main>
+
+      <section className='w-full h-screen bg-red-600'></section>
       
       {/* Render the button that toggles the modal's visibility */}
       <ModalToggleButton onClick={handleInfoModal} isModalOpen={isModalOpen}/>
