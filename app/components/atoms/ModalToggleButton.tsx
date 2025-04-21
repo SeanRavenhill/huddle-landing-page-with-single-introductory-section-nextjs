@@ -15,7 +15,7 @@ export default function ModalToggleButton({ onClick, isModalOpen }: ModalToggleB
         ? modalToggle.classList.add('open')
         : modalToggle.classList.remove('open');
 
-      return () => modalToggle.classList.remove('open');
+      return () => (modalToggle.classList.remove('open'));
     }
     
   }, [isModalOpen])
