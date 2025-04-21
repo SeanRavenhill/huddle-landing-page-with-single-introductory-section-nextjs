@@ -24,6 +24,6 @@ body {
 
 .no-scroll {
   overflow-y: hidden;
-  height: 100vh;
+  height: min-content;
   position: relative;
 }
