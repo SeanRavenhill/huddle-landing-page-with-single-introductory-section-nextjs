@@ -9,16 +9,19 @@ interface ModalToggleButtonProps {
 export default function ModalToggleButton({ onClick, isModalOpen }: ModalToggleButtonProps) {
   useEffect(() => {
     const modalToggle = document.querySelector('.modal-toggle-btn')
+    if (!modalToggle) return;
 
-    if (modalToggle) {
-      isModalOpen
-        ? modalToggle.classList.add('open')
-        : modalToggle.classList.remove('open');
-
-      return () => (modalToggle.classList.remove('open'));
+    if (isModalOpen) {
+      modalToggle.classList.add('open');
+    } else {
+      modalToggle.classList.remove('open');
     }
-    
-  }, [isModalOpen])
+
+    return () => {
+      modalToggle.classList.remove('open');
+    }
+
+  }, [isModalOpen]);
 
   return (
     <div className='absolute top-0 right-0 z-[999] pt-6 pr-6'>

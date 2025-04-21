@@ -21,11 +21,15 @@ export default function useLockBodyScroll(lock: boolean) {
 
   // If lock is true, disable vertical scrolling by adding the class, otherwise enable scrolling.
   useEffect(() => {
-    lock
-    ? document.body.classList.add('overflow-y-hidden') // Disable vertical scrolling.
-    : document.body.classList.remove('overflow-y-hidden'); // Enable vertical scrolling.
-    
+    if(lock) {
+      document.body.classList.add('overflow-y-hidden'); // Disable vertical scrolling.
+    } else {
+      document.body.classList.remove('overflow-y-hidden'); // Enable vertical scrolling.
+    }
+
     // Cleanup function: remove the class to ensure the body scroll is enabled when the component unmounts.
-    return () => (document.body.classList.remove('overflow-y-hidden'));
-  }, [lock]) // Re-run the effect whenever the lock flag changes.
+    return () => {
+      document.body.classList.remove('overflow-y-hidden');
+    }
+  }, [lock]); // Re-run the effect whenever the lock flag changes.
 }
