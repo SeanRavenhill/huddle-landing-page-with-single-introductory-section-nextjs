@@ -26,8 +26,6 @@ export default function useLockBodyScroll(lock: boolean) {
     : document.body.classList.remove('overflow-y-hidden'); // Enable vertical scrolling.
     
     // Cleanup function: remove the class to ensure the body scroll is enabled when the component unmounts.
-    return () => {
-      document.body.classList.remove('overflow-y-hidden');
-    }
+    return () => document.body.classList.remove('overflow-y-hidden');
   }, [lock]) // Re-run the effect whenever the lock flag changes.
 }
