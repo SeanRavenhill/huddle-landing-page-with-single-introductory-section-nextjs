@@ -32,7 +32,7 @@ export default function InfoModal({ className }: InfoModalProps) {
                     />
                     <p className=''>
                       Challenge by
-                      <span className='underline underline-offset-[0.1875rem] hover:text-softMagenta transition-all ml-1'>
+                      <span className='underline underline-offset-[0.1875rem] lg:hover:text-softMagenta transition-all ml-1'>
                         Frontend Mentor
                       </span>
                       .
@@ -43,7 +43,7 @@ export default function InfoModal({ className }: InfoModalProps) {
                   href='https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0'
                   target='_blank'
                 >
-                  <p className='underline underline-offset-[0.1875rem] hover:text-softMagenta transition-all'>
+                  <p className='underline underline-offset-[0.1875rem] lg:hover:text-softMagenta transition-all'>
                     View Challenge Page
                   </p>
                 </Link>
@@ -64,7 +64,7 @@ export default function InfoModal({ className }: InfoModalProps) {
                     />
                     <p className=''>
                       Coded by
-                      <span className='underline underline-offset-[0.1875rem] hover:text-softMagenta transition-all ml-1'>
+                      <span className='underline underline-offset-[0.1875rem] lg:hover:text-softMagenta transition-all ml-1'>
                         Sean Ravenhill
                       </span>
                       .
@@ -75,7 +75,7 @@ export default function InfoModal({ className }: InfoModalProps) {
                   href='https://github.com/SeanRavenhill/huddle-landing-page-with-single-introductory-section-nextjs'
                   target='_blank'
                 >
-                  <p className='underline underline-offset-[0.1875rem] hover:text-softMagenta transition-all'>
+                  <p className='underline underline-offset-[0.1875rem] lg:hover:text-softMagenta transition-all'>
                     View Submission Repository
                   </p>
                 </Link>
