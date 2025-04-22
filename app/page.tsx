@@ -4,7 +4,7 @@
 import { useState } from 'react';
 
 // Import custom hook to lock/unlock body scroll based on modal visibility
-import useLockBodyScroll from '@/hooks/useLockBodyScroll';
+import useNoScroll from '@/app/hooks/useNoScroll';
 
 // Import atom components
 import Background from '@/components/atoms/Background';
@@ -25,7 +25,7 @@ export default function Home() {
 
   // Invoke custom hook to lock body scroll when modal is open.
   // The hook adds/removes a CSS class on the document body based on "isModalOpen".
-  useLockBodyScroll(isModalOpen);
+  useNoScroll(isModalOpen);
 
   // Handler to toggle the modal's visibility.
   // Uses a functional state update to ensure the latest state is toggled.

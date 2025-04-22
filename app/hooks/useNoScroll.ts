@@ -1,14 +1,14 @@
-// useLockBodyScroll.ts
+// useNoScroll.ts
 
 // Import React hooks for side effects
 import { useEffect } from "react";
 
 /**
- * Custom Hook: useLockBodyScroll
+ * Custom Hook: useNoScroll
  *
  * Locks or unlocks vertical scrolling of the document body based on the provided flag.
  *
- * When `lock` is true, the hook adds the CSS class 'overflow-y-hidden' to the document's body,
+ * When `lock` is true, the hook adds the CSS class 'no-scroll' to the document's body,
  * which disables vertical scrolling. If `lock` is false, it removes the class, allowing scrolling.
  *
  * The hook also cleans up by ensuring the class is removed when the component unmounts or when
@@ -17,7 +17,7 @@ import { useEffect } from "react";
  * @param {boolean} lock - A flag indicating whether to lock the body scroll (true = lock, false = unlock).
  */
 
-export default function useLockBodyScroll(lock: boolean) {
+export default function useNoScroll(lock: boolean) {
 
   // If lock is true, disable vertical scrolling by adding the class, otherwise enable scrolling.
   useEffect(() => {
