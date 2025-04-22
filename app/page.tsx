@@ -39,7 +39,7 @@ export default function Home() {
       <Header />
       <main>
         {/* Hero Section containing the background, main hero content, and call-to-action */}
-        <section className='min-h-svh w-full'>
+        <section className='min-h-screen w-full'>
           {/* Render the SVG Background behind the hero content */}
           <Background />
 
@@ -65,9 +65,7 @@ export default function Home() {
 
         </section>
       </main>
-
-      <section className='w-full h-screen bg-red-600'></section>
-      
+            
       {/* Render the button that toggles the modal's visibility */}
       <ModalToggleButton onClick={handleInfoModal} isModalOpen={isModalOpen}/>
       {/* 

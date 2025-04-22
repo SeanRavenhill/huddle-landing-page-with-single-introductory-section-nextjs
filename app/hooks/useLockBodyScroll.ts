@@ -23,13 +23,16 @@ export default function useLockBodyScroll(lock: boolean) {
   useEffect(() => {
     if(lock) {
       document.body.classList.add('no-scroll'); // Disable vertical scrolling.
+
     } else {
       document.body.classList.remove('no-scroll'); // Enable vertical scrolling.
+
     }
 
     // Cleanup function: remove the class to ensure the body scroll is enabled when the component unmounts.
     return () => {
       document.body.classList.remove('no-scroll');
+
     }
   }, [lock]); // Re-run the effect whenever the lock flag changes.
 }
