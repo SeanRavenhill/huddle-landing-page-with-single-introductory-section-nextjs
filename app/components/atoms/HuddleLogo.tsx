@@ -10,7 +10,7 @@ export default function HuddleLogo() {
           width={120}
           height={19}
           priority={true}
-          alt='Huddle'
+          alt='Huddle homepage'
           className='block sm:hidden'
         />
         <Image
@@ -18,7 +18,7 @@ export default function HuddleLogo() {
           width={200}
           height={32}
           priority={true}
-          alt='Huddle'
+          alt='Huddle homepage'
           className='hidden sm:block'
         />
       </Link>

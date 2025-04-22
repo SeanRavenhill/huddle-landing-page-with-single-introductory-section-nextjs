@@ -9,7 +9,7 @@ interface InfoModalProps {
 
 export default function InfoModal({ className }: InfoModalProps) {
   return (
-    <div className={clsx('absolute inset-0 z-50', className)}>
+    <div id='info-modal' className={clsx('absolute inset-0 z-50', className)}>
       {/* Overlay layer */}
       <div className='w-full h-full bg-black opacity-50'></div>
 
@@ -17,7 +17,6 @@ export default function InfoModal({ className }: InfoModalProps) {
       <div className='absolute inset-0'>
         <div className='grid justify-center items-center w-full h-full'>
           <div className='w-full h-auto bg-primaryViolet ~p-10/20 rounded-lg'>
-
             <div className='flex flex-col gap-10'>
               <div className='flex flex-col items-center gap-2'>
                 <Link href='https://www.frontendmentor.io/' target='_blank'>
@@ -48,7 +47,7 @@ export default function InfoModal({ className }: InfoModalProps) {
                   </p>
                 </Link>
               </div>
-              
+
               <span className='w-full h-[0.0625rem] bg-white'></span>
 
               <div className='flex flex-col items-center gap-2'>
@@ -81,7 +80,6 @@ export default function InfoModal({ className }: InfoModalProps) {
                 </Link>
               </div>
             </div>
-
           </div>
         </div>
       </div>

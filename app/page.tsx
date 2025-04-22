@@ -39,7 +39,9 @@ export default function Home() {
       <Header />
       <main>
         {/* Hero Section containing the background, main hero content, and call-to-action */}
-        <section className='min-h-screen w-full'>
+        <section
+          aria-label='hero-section'
+          className='min-h-screen w-full'>
           {/* Render the SVG Background behind the hero content */}
           <Background />
 
