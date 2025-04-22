@@ -39,7 +39,7 @@ export default function Home() {
       <Header />
       <main>
         {/* Hero Section containing the background, main hero content, and call-to-action */}
-        <section className='min-h-screen w-full'>
+        <section className='min-h-svh w-full'>
           {/* Render the SVG Background behind the hero content */}
           <Background />
 
