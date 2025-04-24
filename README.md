@@ -16,8 +16,6 @@ This is a solution to the [Huddle landing page with single introductory section 
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -29,20 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./screenshots/screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution Github Repository ](https://github.com/SeanRavenhill/huddle-landing-page-with-single-introductory-section-nextjs)
+- [Live Site URL hosted on Vercel: ](https://huddle-landing-page-one-psi.vercel.app/)
 
 ## My process
 
@@ -55,57 +45,67 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- [Tailwindcss](https://tailwindcss.com/) - Utility-first CSS framework
+- [Fluid for Tailwind](https://fluid.tw/) - A plugin that extends Tailwind's utility-first approach with smooth scaling between breakpoints
+- [SVGR](https://react-svgr.com/) - Universal tool to transform SVG into React components
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+- Balancing theoretical knowledge from [**Codecademy's Front End Career Path**](https://www.codecademy.com/learn/paths/front-end-engineer-career-path) with hands-on practice to build real-world projects.
 
-To see how you can add code snippets, see below:
+- Gaining confidence in **React** and **Next.js**, especially when integrating frameworks into small-scale projects.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+- Configuring **SVGR** in **Next.js** to import SVGs as React components.
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+- Implementing fluid design patterns with **Tailwind CSS** and custom dynamic utilities.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+- Writing custom React hooks (useFocusTrap, useNoScroll) to enhance UI behavior and accessibility.
+
+- Navigating a re-learning curve with Tailwind CSS and CSS after focusing on stateful applications and hooks.
+
+- **Fluid Responsive Design:** Utilizes Tailwind CSS and CSS clamp() for dynamic sizing, avoiding rigid breakpoints.
+
+- **SVG Optimization:** Replaced PNGs and raster SVGs with inline SVG components using SVGR.
+
+- **Custom Info Modal:** A reusable modal component featuring state management, transition animations, a focus-trap hook, and a no-scroll hook.
+
+- **Performance & Accessibility:** Achieved Lighthouse performance scores of 100 on both Desktop and Mobile for the Vercel deployment.
+
+### Proud of
+![](./screenshots/lh_scr_desktop.png)
+![](./screenshots/lh_scr_mobile.png)
+
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+- **Starter Template:** Create a robust starter project repository on GitHub, pre-configured with all dependencies, a global CSS file, Tailwind config, and essential configs for easy cloning and rapid project setup.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- **CSS Organization:** Continue using Tailwind for utility-first styling (e.g., layout, spacing) while offloading complex or repeated styles into global CSS, custom Tailwind config utilities, and component-specific CSS modules to keep JSX/HTML markup concise.
+
+- **Efficient Dev Loop:** Implement a local development and build-testing workflow—such as pre-push Git hooks, CI scripts, or dedicated build commands—to catch errors before pushing and minimize redundant repository updates.
+
+- **Focus on Progress:** Avoid endless refactor loops; prioritize completing new challenges and shipping features over chasing “perfect” markup and code.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Achieving Focus Trapping in a React Modal Component](https://medium.com/cstech/achieving-focus-trapping-in-a-react-modal-component-3f28f596f35b) - This artcile provided me insight and understanding into the What, Why and How of using Focus Traps.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Atomic Design Methodology - Brad Frost](https://atomicdesign.bradfrost.com/) - Found this useful for project directory structure
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- [Sean Ravenhill](https://github.com/SeanRavenhill)
+- Frontend Mentor - [@SeanRavenhill](https://www.frontendmentor.io/profile/SeanRavenhill)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+- [Frontend Mentor](https://www.frontendmentor.io/) for the challenge design and assets.
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- [Codecademy](https://www.frontendmentor.io/https://www.codecademy.com/) for the Front End Career Path curriculum, which helped reinforce core web fundamentals.
+
+- [OpenAI - ChatGPT](https://openai.com/chatgpt/overview/) - I will admit I did feed my markup into a instance of ChatGPT for help to bring all the components in-line with A11y accesibilty standards. Also needed some help when it came to the useFocusTrap custom hook and wiring that into the project.
+
+- [Ogun Akar](https://medium.com/@ogunakar) - for this [article](https://medium.com/cstech/achieving-focus-trapping-in-a-react-modal-component-3f28f596f35b) related to focus traps, what they are used for and demostration of implentation.
+
+
+

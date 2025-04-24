@@ -12,7 +12,7 @@ export default function FacebookIcon() {
           border rounded-full
           transition
           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-softMagenta
-        lg:hover:border-softMagenta lg:hover:text-softMagenta
+        sm:hover:border-softMagenta sm:hover:text-softMagenta
         ' 
       >
       <FacebookLogo
