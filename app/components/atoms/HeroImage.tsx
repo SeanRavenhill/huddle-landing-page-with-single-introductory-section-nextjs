@@ -1,4 +1,3 @@
-// SVG Imports using svgr
 import DesktopIllustration from '@/assets/svgs/desktop-illustration.svg';
 import MobileIllustration from '@/assets/svgs/mobile-illustration.svg';
 

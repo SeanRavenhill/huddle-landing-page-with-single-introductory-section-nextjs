@@ -3,16 +3,23 @@ import TwitterLogo from '@/assets/svgs/twitter-logo.svg';
 
 export default function TwitterIcon() {
   return (
-    <>
-      <Link href='/' aria-label='Visit our Twitter page'>
-        <div className='~w-7/10 ~h-7/10 rounded-full border flex flex-col justify-center transition lg:hover:border-softMagenta lg:hover:text-softMagenta'>
-          <TwitterLogo
-            className='mx-auto w-[52%]'
-            aria-hidden='true'
-            focusable='false'
-          />
-        </div>
-      </Link>
-    </>
+    <Link
+      href='/' 
+      aria-label='Visit our Twitter page'
+      className='
+        inline-flex items-center justify-center
+        ~w-7/10 ~h-7/10
+        border rounded-full
+        transition
+        focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-softMagenta
+        lg:hover:border-softMagenta lg:hover:text-softMagenta
+        '
+      > 
+      <TwitterLogo
+        className='w-[52%]'
+        aria-hidden='true'
+        focusable='false'
+      />
+    </Link>
   );
 }
