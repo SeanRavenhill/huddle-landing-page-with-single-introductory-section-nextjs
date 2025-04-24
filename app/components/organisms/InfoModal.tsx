@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 interface InfoModalProps {
-  isModalOpen: Boolean;
+  isModalOpen: boolean;
 }
 
 export default function InfoModal({ isModalOpen }: InfoModalProps) {
