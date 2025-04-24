@@ -1,7 +1,7 @@
 'use client';
 
 // Import React hooks for state management and side effects
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 // Import custom hook to lock/unlock body scroll based on modal visibility
 import useNoScroll from '@/app/hooks/useNoScroll';
@@ -23,15 +23,18 @@ export default function Home() {
   // "isModalOpen" is false when modal is hidden, true when visible.
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  const containerRef = useRef<HTMLDivElement>(null);
+
   // Invoke custom hook to lock body scroll when modal is open.
   // The hook adds/removes a CSS class on the document body based on "isModalOpen".
   useNoScroll(isModalOpen);
 
   // Handler to toggle the modal's visibility.
   // Uses a functional state update to ensure the latest state is toggled.
-  const handleInfoModal = () => {
+  const handleToggleModal = () => {
     setIsModalOpen(prev => !prev);
   };
+  
 
   return (
     <>
@@ -69,9 +72,16 @@ export default function Home() {
       </main>
             
       {/* Button that toggles the modal's visibility */}
-      <ModalToggleButton onClick={handleInfoModal} isModalOpen={isModalOpen}/>
-      {/* Conditionally render the InfoModal by passing isModalOpen state as prop */}
-      <InfoModal isModalOpen={isModalOpen} />
+      <ModalToggleButton 
+        onClick={handleToggleModal}
+        isModalOpen={isModalOpen}
+      />
+      {/* Always render the InfoModal, but toggle its visibility via a CSS class */}
+      <InfoModal 
+        onClose={handleToggleModal}
+        isModalOpen={isModalOpen}
+        containerRef={containerRef}
+      />
     </>
   );
 }
