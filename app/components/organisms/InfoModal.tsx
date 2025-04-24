@@ -1,17 +1,24 @@
-import clsx from 'clsx';
-
 import Image from 'next/image';
 import Link from 'next/link';
 
 interface InfoModalProps {
-  className?: string;
+  isModalOpen: Boolean;
 }
 
-export default function InfoModal({ className }: InfoModalProps) {
-  return (
-    <div id='info-modal' className={clsx('absolute inset-0 z-50', className)}>
-      {/* Overlay layer */}
-      <div className='w-full h-full bg-black opacity-50'></div>
+export default function InfoModal({ isModalOpen }: InfoModalProps) {
+  return isModalOpen ? (
+    <div
+      id='info-modal'
+      role='dialog'
+      aria-modal='true'
+      className='absolute inset-0 z-50'
+    >
+      {/* Overlay layer -  */}
+      <div 
+        className='w-full h-full bg-black opacity-50'
+        aria-hidden='true'
+      >    
+      </div>
 
       {/* Content Layer */}
       <div className='absolute inset-0'>
@@ -84,5 +91,7 @@ export default function InfoModal({ className }: InfoModalProps) {
         </div>
       </div>
     </div>
+  ) : (
+    <></>
   );
 }
