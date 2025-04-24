@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-
 import useFocusTrap from '@/app/hooks/useFocusTrap';
 
 interface InfoModalProps {
@@ -29,24 +28,19 @@ export default function InfoModal({
       aria-labelledby='info-modal-title'
       className={`absolute inset-0 z-50 ${isModalOpen ? 'block' : 'hidden'}`}
     >
-      {/* Decorative - Overlay layer */}
       <div
         className='w-full h-full bg-black opacity-50'
         aria-hidden='true'
       ></div>
-
-      {/* Content Layer */}
       <div className='absolute inset-0'>
         <div className='grid justify-center items-center w-full h-full'>
           <div
             ref={containerRef}
             className='w-full h-auto bg-primaryViolet ~p-10/20 rounded-lg'
           >
-            {/* Screen-Reader only Title */}
             <h2 id='info-modal-title' className='sr-only'>
               About this project and challenge
             </h2>
-
             <div className='flex flex-col gap-10'>
               <div className='flex flex-col items-center gap-2'>
                 <Link
